@@ -1,0 +1,263 @@
+/* Styles Généraux */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff69b4; /* Rose fuchsia, couleur dominante */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f0f0f0;
+}
+
+/* Header et Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #00bcd4; /* Bleu turquoise */
+    color: white;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links button:hover {
+    background-color: #ff4d94;
+}
+
+.intro-section {
+    background-color: #00bcd4;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 10% 4rem;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sections du contenu principal */
+main {
+    padding: 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.skills-experiences-section {
+    background-color: #00bcd4;
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.experience-column, .training-column, .skills-column {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.skills-column {
+    background-color: #ff69b4;
+    color: white;
+}
+
+.skill-bar-container {
+    margin-bottom: 1.5rem;
+}
+
+.skill-name {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.bar {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background-color: white;
+    border-radius: 6px;
+    transition: width 1s ease-in-out;
+}
+
+/* Les pourcentages sont basés sur l'image */
+.html-fill { width: 95%; }
+.visual-c-plus-plus-fill { width: 80%; }
+.bootstrap-fill { width: 90%; }
+.adobe-fill { width: 85%; }
+
+/* Section Projets */
+.projects-section {
+    padding: 2rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.project-description {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.project-images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.project-images img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%; /* Pour les images circulaires */
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+/* Section Réalisations */
+.realizations-section {
+    padding: 2rem;
+}
+
+.realizations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.realization-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.realization-card:hover {
+    transform: translateY(-5px);
+}
+
+.realization-card img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.realization-card h4 {
+    color: #00bcd4;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    background-color: #00bcd4;
+    color: white;
+    padding: 3rem 5%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media {
+    text-align: right;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: white;
+}
+
+

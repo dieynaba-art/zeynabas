@@ -1,0 +1,80 @@
+/* Couleur navbar */
+.custom-navbar {
+  background-color: #00e0d5;
+}
+.custom-navbar .nav-link {
+  color: #000 !important;
+  font-weight: bold;
+}
+.custom-navbar .nav-link.active,
+.custom-navbar .nav-link:hover {
+  color: #ff007f !important;
+}
+.btn-cv {
+  background-color: #ff00aa;
+  color: white;
+  font-weight: bold;
+}
+.btn-cv:hover {
+  background-color: #e60098;
+}
+
+/* Section compétences */
+.competence-section {
+  background-color: #ff4fb8;
+  color: #fff;
+  margin-top: 80px; /* espace à cause de la navbar */
+}
+.competence-section h2 {
+  color: #000;
+}
+.card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+.card img {
+  max-width: 80px;
+}
+
+/* Footer */
+footer {
+    background-color: #00bcd4;
+    color: white;
+    padding: 3rem 5%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media {
+    text-align: right;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: white;
+}
